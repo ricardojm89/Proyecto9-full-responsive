@@ -141,7 +141,7 @@ p{
         justify-content: space-between;
         align-items: center;
         padding-right: 30px;
-        
+        font-size: 20px;
     }
     .logo{
         width: 200px;
