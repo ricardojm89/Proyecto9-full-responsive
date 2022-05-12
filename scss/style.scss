@@ -1,36 +1,25 @@
-body{
-    font-size: 20px;
-}
+@import "config";
+@import "variables";
+@import "mixins";
+@import "tarjetas";
+
+
+
 .logo{
     color: brown;
     transition: all 500ms;
+    &:hover{
+        color: rgba(211, 53, 53, 0.911);
+    }
 }
-.logo:hover{
-    color: rgba(211, 53, 53, 0.911);
-}
+
 h2{
     color: brown;
 }
 footer a{
     color: brown;
 }
-.contenedorTarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 15px;
-    .tarjeta{
-        color: white;
-        margin: 10px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 15px 5px #242222;
-        transition: all 500ms
-    }
-    .tarjeta:hover{
-        transform: scale(1.1);
-    }
-}
+
 
 .integrantes{
     color: aliceblue;
@@ -38,12 +27,13 @@ footer a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    .integrantes img{
+        padding: 10px 20px;
+        height: 100px;
+        width: 100px;
+    }
 }
-.integrantes img{
-    padding: 10px 20px;
-    height: 100px;
-    width: 100px;
-}
+
 .formulario{
     width: 300px;
     display: flex;

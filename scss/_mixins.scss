@@ -1,0 +1,5 @@
+@mixin interiorTarjeta ($color,$margin,$padding){
+    color: $color;
+    margin: $margin;
+    padding: $padding;
+}

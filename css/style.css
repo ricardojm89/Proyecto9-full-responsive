@@ -2,6 +2,34 @@ body {
   font-size: 20px;
 }
 
+.contenedorTarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 15px;
+}
+
+.contenedorTarjetas .tarjeta {
+  color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px #242222;
+          box-shadow: 5px 5px 15px 5px #242222;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.contenedorTarjetas .tarjeta:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .logo {
   color: brown;
   -webkit-transition: all 500ms;
@@ -20,34 +48,6 @@ footer a {
   color: brown;
 }
 
-.contenedorTarjetas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px 15px;
-}
-
-.contenedorTarjetas .tarjeta {
-  color: white;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 15px 5px #242222;
-          box-shadow: 5px 5px 15px 5px #242222;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-}
-
-.contenedorTarjetas .tarjeta:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .integrantes {
   color: aliceblue;
   font-size: 15px;
@@ -63,7 +63,7 @@ footer a {
           align-items: center;
 }
 
-.integrantes img {
+.integrantes .integrantes img {
   padding: 10px 20px;
   height: 100px;
   width: 100px;

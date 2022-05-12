@@ -1,0 +1,18 @@
+.contenedorTarjetas{
+    display: map-get($contenedorTarjetas , displey );
+    flex-wrap: map-get($contenedorTarjetas , flexWrap );
+    justify-content: map-get($contenedorTarjetas , justifyContent );
+    padding: map-get($contenedorTarjetas , padding );
+
+    .tarjeta{
+        @include interiorTarjeta (#fff,10px,20px);
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px 5px #242222;
+        transition: all 500ms
+    }
+    .tarjeta:hover{
+        transform: scale(1.1);
+    }
+}
+
+
